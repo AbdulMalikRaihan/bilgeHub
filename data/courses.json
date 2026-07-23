@@ -1,0 +1,102 @@
+[
+  {
+    "id": 1,
+    "name": "Belajar JavaScript dari Nol",
+    "description": "Kursus dasar JavaScript untuk pemula, mulai dari variabel hingga async/await.",
+    "price": 250000,
+    "InstructorId": 1,
+    "CategoryId": 1,
+    "createdAt": "2026-01-10T08:00:00.000Z",
+    "updatedAt": "2026-01-10T08:00:00.000Z"
+  },
+  {
+    "id": 2,
+    "name": "React.js untuk Pemula",
+    "description": "Membangun aplikasi web modern menggunakan React.js dan hooks.",
+    "price": 350000,
+    "InstructorId": 1,
+    "CategoryId": 1,
+    "createdAt": "2026-01-11T08:00:00.000Z",
+    "updatedAt": "2026-01-11T08:00:00.000Z"
+  },
+  {
+    "id": 3,
+    "name": "Node.js & Express Fundamental",
+    "description": "Membuat REST API menggunakan Node.js, Express, dan Sequelize.",
+    "price": 300000,
+    "InstructorId": 1,
+    "CategoryId": 1,
+    "createdAt": "2026-01-12T08:00:00.000Z",
+    "updatedAt": "2026-01-12T08:00:00.000Z"
+  },
+  {
+    "id": 4,
+    "name": "Python untuk Data Science",
+    "description": "Analisis data menggunakan Python, Pandas, dan NumPy.",
+    "price": 400000,
+    "InstructorId": 2,
+    "CategoryId": 2,
+    "createdAt": "2026-01-13T08:00:00.000Z",
+    "updatedAt": "2026-01-13T08:00:00.000Z"
+  },
+  {
+    "id": 5,
+    "name": "Machine Learning Dasar",
+    "description": "Pengenalan konsep machine learning dan implementasi dengan scikit-learn.",
+    "price": 450000,
+    "InstructorId": 2,
+    "CategoryId": 2,
+    "createdAt": "2026-01-14T08:00:00.000Z",
+    "updatedAt": "2026-01-14T08:00:00.000Z"
+  },
+  {
+    "id": 6,
+    "name": "Prinsip Dasar UI/UX Design",
+    "description": "Memahami prinsip desain, wireframing, dan prototyping dengan Figma.",
+    "price": 300000,
+    "InstructorId": 3,
+    "CategoryId": 3,
+    "createdAt": "2026-01-15T08:00:00.000Z",
+    "updatedAt": "2026-01-15T08:00:00.000Z"
+  },
+  {
+    "id": 7,
+    "name": "Figma dari Nol hingga Mahir",
+    "description": "Panduan lengkap menggunakan Figma untuk desain aplikasi.",
+    "price": 275000,
+    "InstructorId": 3,
+    "CategoryId": 3,
+    "createdAt": "2026-01-16T08:00:00.000Z",
+    "updatedAt": "2026-01-16T08:00:00.000Z"
+  },
+  {
+    "id": 8,
+    "name": "Strategi Digital Marketing 2026",
+    "description": "Belajar SEO, SEM, dan social media marketing untuk bisnis.",
+    "price": 320000,
+    "InstructorId": 4,
+    "CategoryId": 4,
+    "createdAt": "2026-01-17T08:00:00.000Z",
+    "updatedAt": "2026-01-17T08:00:00.000Z"
+  },
+  {
+    "id": 9,
+    "name": "Content Marketing & Copywriting",
+    "description": "Teknik menulis konten pemasaran yang efektif dan persuasif.",
+    "price": 220000,
+    "InstructorId": 4,
+    "CategoryId": 4,
+    "createdAt": "2026-01-18T08:00:00.000Z",
+    "updatedAt": "2026-01-18T08:00:00.000Z"
+  },
+  {
+    "id": 10,
+    "name": "Fullstack Web Development Bootcamp",
+    "description": "Kursus intensif membangun aplikasi web fullstack dari frontend hingga backend.",
+    "price": 750000,
+    "InstructorId": 1,
+    "CategoryId": 1,
+    "createdAt": "2026-01-19T08:00:00.000Z",
+    "updatedAt": "2026-01-19T08:00:00.000Z"
+  }
+]
