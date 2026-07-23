@@ -1,0 +1,32 @@
+[
+  {
+    "email": "lucas.reed@bilgehub.com",
+    "password": "abcd1234",
+    "role": "Instructor"
+  },
+  {
+    "email": "kevin.jonathan@bilgehub.com",
+    "password": "defg4568",
+    "role": "Instructor"
+  },
+  {
+    "email": "abigail.perry@bilgehub.com",
+    "password": "a1b2c3d4",
+    "role": "Instructor"
+  },
+  {
+    "email": "henry.hughes@bilgehub.com",
+    "password": "d4e5f6g7",
+    "role": "Instructor"
+  },
+  {
+    "email": "owen.griffin@bilgehub.com",
+    "password": "opqw098f",
+    "role": "Instructor"
+  },
+  {
+    "email": "michelle.lim@bilgehub.com",
+    "password": "1234qwer",
+    "role": "Instructor"
+  }
+]

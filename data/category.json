@@ -1,0 +1,22 @@
+[
+  {
+    "id": 1,
+    "name": "Software Engineer"
+  },
+  {
+    "id": 2,
+    "name": "Artificial Inteligent"
+  },
+  {
+    "id": 3,
+    "name": "Cyber Security"
+  },
+  {
+    "id": 4,
+    "name": "Network Engineer"
+  },
+  {
+    "id": 5,
+    "name": "Big Data"
+  }
+]

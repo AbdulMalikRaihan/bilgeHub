@@ -19,8 +19,11 @@
   },
   "homepage": "https://github.com/AbdulMalikRaihan/bilgeHub#readme",
   "dependencies": {
+    "bcryptjs": "^3.0.3",
     "ejs": "^6.0.1",
     "express": "^5.2.1",
+    "express-session": "^1.19.0",
+    "pdfkit": "^0.19.1",
     "pg": "^8.22.0",
     "sequelize": "^6.37.8"
   },

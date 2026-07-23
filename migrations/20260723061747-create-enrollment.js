@@ -9,17 +9,29 @@ module.exports = {
         primaryKey: true,
         type: Sequelize.INTEGER
       },
-      status: {
-        type: Sequelize.STRING
-      },
-      enroledDate: {
+      enrolledDate: {
         type: Sequelize.DATE
       },
-      StudentId: {
+      progress: {
         type: Sequelize.INTEGER
       },
+      StudentId: {
+        type: Sequelize.INTEGER,
+        references: {
+          model: 'Students',
+          key: 'id'
+        },
+        onUpdate: 'CASCADE',
+        onDelete: 'CASCADE'
+      },
       CourseId: {
-        type: Sequelize.INTEGER
+        type: Sequelize.INTEGER,
+        references: {
+          model: 'Courses',
+          key: 'id'
+        },
+        onUpdate: 'CASCADE',
+        onDelete: 'CASCADE'
       },
       createdAt: {
         allowNull: false,
