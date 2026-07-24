@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Learning | BilgeHub</title>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
+    />
+  </head>
+
+  <body class="bg-light">
+    <!-- Navbar -->
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-sm">
+      <div class="container">
+        <!-- Logo -->
+
+        <a class="navbar-brand fw-bold" href="/home"> 🎓 BilgeHub </a>
+
+        <button
+          class="navbar-toggler"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <!-- Left Menu -->
+
+          <ul class="navbar-nav ms-4">
+            <% if(user.role==="Student"){ %>
+
+            <li class="nav-item">
+              <a class="nav-link" href="/home"> All Courses </a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="/instructors"> Instructor </a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link active" href="/my-learning"> My Learning </a>
+            </li>
+
+            <% } else { %>
+
+            <li class="nav-item">
+              <a class="nav-link active" href="/home"> All Courses </a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="/instructors"> Instructor </a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="/my-courses"> My Courses </a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="/courses/add"> Add Course </a>
+            </li>
+
+            <% } %>
+          </ul>
+
+          <!-- Right -->
+
+          <div class="d-flex align-items-center ms-auto gap-3">
+            <!-- Profile -->
+            <div class="dropdown">
+              <button
+                class="btn btn-outline-light rounded-circle"
+                data-bs-toggle="dropdown"
+              >
+                <i class="bi bi-person-circle fs-4"></i>
+              </button>
+
+              <ul class="dropdown-menu dropdown-menu-end shadow">
+                <li>
+                  <h6 class="dropdown-header"><%= user.role %></h6>
+                </li>
+
+                <li>
+                  <a class="dropdown-item" href="/profile/edit">
+                    <i class="bi bi-pencil-square me-2"></i>
+                    Edit Profile
+                  </a>
+                </li>
+
+                <li><hr class="dropdown-divider" /></li>
+
+                <li>
+                  <a class="dropdown-item text-danger" href="/logout">
+                    <i class="bi bi-box-arrow-right me-2"></i>
+                    Logout
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Header -->
+
+    <section class="text-white py-5" style="background: #343a40">
+      <div class="container">
+        <h1 class="display-4 fw-bold">My Learning</h1>
+
+        <p class="lead">
+          Continue learning and finish every course you've enrolled in.
+        </p>
+      </div>
+    </section>
+
+    <!-- Statistics -->
+
+    <section class="py-4">
+      <div class="container">
+        <div class="row justify-content-center g-4">
+          <!-- Enrolled -->
+          <div class="col-md-3">
+            <div class="card shadow-sm">
+              <div class="card-body text-center">
+                <h2 class="fw-bold text-primary"><%= enrollments.length %></h2>
+                <div class="text-muted">Enrolled Courses</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- In Progress -->
+          <div class="col-md-3">
+            <div class="card shadow-sm">
+              <div class="card-body text-center">
+                <h2 class="fw-bold text-warning"><%= inProgress %></h2>
+                <div class="text-muted">In Progress</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Completed -->
+          <div class="col-md-3">
+            <div class="card shadow-sm">
+              <div class="card-body text-center">
+                <h2 class="fw-bold text-success"><%= completed %></h2>
+                <div class="text-muted">Completed</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Courses -->
+
+    <section class="pb-5">
+      <div class="container">
+        <% if(enrollments.length===0){ %>
+
+        <div class="card shadow-sm">
+          <div class="card-body py-5 text-center">
+            <i class="bi bi-journal-x display-1 text-secondary"></i>
+
+            <h3 class="mt-3">No Course Yet</h3>
+
+            <p class="text-muted">
+              Start learning by enrolling your first course.
+            </p>
+
+            <a href="/home" class="btn btn-dark rounded-pill px-4">
+              Browse Courses
+            </a>
+          </div>
+        </div>
+
+        <% } else { %>
+
+        <div class="row g-4">
+          <% enrollments.forEach(el=> { %>
+
+          <div class="col-lg-3 col-md-6">
+            <div class="card h-100 shadow-sm border-0">
+              <img
+                src="<%= el.Course.imageUrl %>"
+                class="card-img-top"
+                style="height: 220px; object-fit: cover"
+              />
+
+              <div class="card-body d-flex flex-column">
+                <% let badge = "bg-primary"; if (el.Course.level === "Beginner")
+                { badge = "bg-primary"; } else if (el.Course.level ===
+                "Intermediate") { badge = "bg-warning text-dark"; } else { badge
+                = "bg-danger"; } %>
+
+                <span class="badge <%= badge %> mb-2 w-100 py-2">
+                  <%= el.Course.level %>
+                </span>
+
+                <h5 class="fw-bold mb-3" style="height: 72px">
+                  <%= el.Course.name %>
+                </h5>
+
+                <p class="text-muted small mb-2">
+                  <%= el.Course.Instructor.fullName %>
+                </p>
+
+                <div class="small text-muted mb-2">
+                  <i class="bi bi-clock"></i>
+
+                  <%= el.Course.duration %> Hours
+                </div>
+
+                <div class="progress mb-3" style="height: 22px">
+                  <div
+                    class="progress-bar bg-success"
+                    style="width: <%= el.progress %>%"
+                  >
+                    <%= el.progress %>%
+                  </div>
+                </div>
+
+                <% if(el.progress===100){ %>
+
+                <a
+                  href="/certificate/<%= el.id %>"
+                  class="btn btn-success w-100"
+                >
+                  <i class="bi bi-award"></i>
+                  Certificate
+                </a>
+
+                <% }else{ %>
+
+                <a href="/my-learning/<%= el.Course.id %>" class="btn btn-dark">
+                  Continue Learning
+                </a>
+
+                <% } %>
+              </div>
+            </div>
+          </div>
+
+          <% }) %>
+        </div>
+
+        <% } %>
+      </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
