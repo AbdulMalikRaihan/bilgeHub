@@ -1,7 +1,7 @@
 const PDFDocument = require("pdfkit");
 const { Op } = require("sequelize");
 const bcrypt = require("bcryptjs");
-const { formattedPrice } = require("../helpers/helper");
+const { formatRupiah } = require("../helpers/helper");
 const {
   User,
   Student,
@@ -307,7 +307,7 @@ class Controller {
 
   static logout(req, res) {
     req.session.destroy(() => {
-      res.redirect("/");
+      res.redirect("/login");
     });
   }
 
@@ -342,7 +342,7 @@ class Controller {
         categories,
         search,
         selectedCategory: Number(category),
-        formattedPrice,
+        formatRupiah,
       });
     } catch (error) {
       res.send(error);
@@ -429,7 +429,7 @@ class Controller {
         materials,
         enrollment,
         isEnrolled,
-        formattedPrice,
+        formatRupiah,
       });
     } catch (error) {
       console.log(error);
@@ -703,7 +703,7 @@ class Controller {
 
     res.render("myCourses", {
       courses,
-      formattedPrice,
+      formatRupiah,
       request: req,
     });
   }

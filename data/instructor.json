@@ -1,26 +1,26 @@
 [
   {
     "id": 1,
-    "fullName": "Lucas Reed",
-    "imageUrl": "https://randomuser.me/api/portraits/men/19.jpg",
+    "fullName": "Daniel Pratama",
+    "imageUrl": "https://randomuser.me/api/portraits/men/41.jpg",
     "expertise": "Software Engineering",
     "yearsExperience": 6,
-    "bio": "I enjoy building web applications that solve real-world problems and create meaningful experiences for users. During the past six years, I've worked on frontend and backend development using JavaScript, React, Node.js, and PostgreSQL. My teaching style focuses on learning by doing, where every concept is followed by hands-on projects that simulate real software development scenarios.",
+    "bio": "I love turning ideas into working software that people actually enjoy using. Over the past six years, I've built full-stack applications with JavaScript, React, Node.js, and PostgreSQL for startups and growing companies. In my classes, I keep things hands-on, pairing every concept with a project so students learn engineering the way it happens in the real world.",
     "UserId": 1
   },
   {
     "id": 2,
-    "fullName": "Kevin Jonathan",
-    "imageUrl": "https://randomuser.me/api/portraits/men/15.jpg",
+    "fullName": "Rangga Wibowo",
+    "imageUrl": "https://randomuser.me/api/portraits/men/52.jpg",
     "expertise": "Software Engineering, Cyber Security",
     "yearsExperience": 8,
-    "bio": "Backend engineering has always been my passion because it combines problem solving, performance, and security. I have spent years designing scalable APIs and cloud-based services while also implementing secure authentication and application security best practices. My goal is to help students write code that is not only functional but also secure and maintainable.",
+    "bio": "Backend engineering has always been my passion because it combines problem solving, performance, and security. I have spent eight years designing scalable APIs and cloud-based services while also implementing secure authentication and application security best practices. My goal is to help students write code that is not only functional but also secure and maintainable.",
     "UserId": 2
   },
   {
     "id": 3,
-    "fullName": "Abigail Perry",
-    "imageUrl": "https://randomuser.me/api/portraits/women/28.jpg",
+    "fullName": "Amelia Putri",
+    "imageUrl": "https://randomuser.me/api/portraits/women/47.jpg",
     "expertise": "Artificial Intelligence",
     "yearsExperience": 10,
     "bio": "Artificial Intelligence has been the center of my career for more than a decade. I've worked on machine learning research, deep learning projects, and AI-powered applications for healthcare and education. I love breaking down complex concepts into simple explanations and helping students build confidence through practical AI projects.",
@@ -28,8 +28,8 @@
   },
   {
     "id": 4,
-    "fullName": "Henry Hughes",
-    "imageUrl": "https://randomuser.me/api/portraits/men/29.jpg",
+    "fullName": "Fajar Nugroho",
+    "imageUrl": "https://randomuser.me/api/portraits/men/63.jpg",
     "expertise": "Cyber Security, Network Engineering",
     "yearsExperience": 9,
     "bio": "Protecting systems from cyber threats has been my profession for nearly a decade. I've helped organizations strengthen their infrastructure through penetration testing, vulnerability assessments, and secure network design. My courses emphasize real attack simulations and practical defensive strategies that students can immediately apply.",
@@ -37,8 +37,8 @@
   },
   {
     "id": 5,
-    "fullName": "Owen Griffin",
-    "imageUrl": "https://randomuser.me/api/portraits/men/33.jpg",
+    "fullName": "Bagas Saputra",
+    "imageUrl": "https://randomuser.me/api/portraits/men/71.jpg",
     "expertise": "Network Engineering",
     "yearsExperience": 11,
     "bio": "I enjoy designing and maintaining reliable computer networks that support thousands of users every day. Throughout my career, I've worked with Cisco technologies, enterprise routing, switching, and network optimization. I believe networking is best learned through practice, so my courses focus heavily on real configuration labs and troubleshooting exercises.",
@@ -46,8 +46,8 @@
   },
   {
     "id": 6,
-    "fullName": "Michelle Lim",
-    "imageUrl": "https://randomuser.me/api/portraits/women/12.jpg",
+    "fullName": "Clarissa Handayani",
+    "imageUrl": "https://randomuser.me/api/portraits/women/56.jpg",
     "expertise": "Big Data, Artificial Intelligence",
     "yearsExperience": 7,
     "bio": "Working with large-scale data has shown me how valuable information can become when processed correctly. My experience includes building data pipelines, distributed processing systems, and analytics platforms using Apache Spark, Hadoop, and cloud technologies. I enjoy teaching students how to transform raw data into meaningful business insights through real-world projects.",
